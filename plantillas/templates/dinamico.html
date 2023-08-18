@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinamico</title>
+</head>
+<body>
+    <h1>Hola {{name}}</h1>
+    <h3>Categorias</h3>
+
+    <ul>
+        {% comment %}
+            En la parte inferior recorremos las categorias,
+            en caso de ser 'code' la categoria se muestra en negrita
+        {% endcomment %}
+        {% for categoria in categories %}
+            {% if categoria == 'code' %}
+                <li><strong>{{ categoria|upper }}</strong></li>
+            {% else %}
+                <li>{{ categoria }}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+
+    <h5>Total de Categorias:  {{categories|length}} </h5>
+</body>
+</html>

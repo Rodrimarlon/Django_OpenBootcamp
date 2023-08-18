@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+}
+
+
+footer {
+    background-color: black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.nav_main {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    height: 60px;
+    
+}
+
+.nav_list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav_list a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    padding: 20px;
+}
+
+.main_home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15vh;
+}
+
+.main_home img {
+    border-radius: 20px;
+    width: 400px;
+}
+
+.main_home h1 {
+    padding: 20px;
+    font-size: 40px;
+}
+
+.main_home p {
+    padding: 10px;
+}
+
+.main_home .precentation {
+    width: 60%;
+}
+
+
+.main_porfolio h1 {
+    padding: 30px;
+    color: white;
+}
+
+.main_porfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+}
+
+.container_img {
+    display: flex;
+    border: solid 5px black;
+    border-radius: 10px;
+
+}
+
+.container_img img {
+    padding: 10px;
+    border-radius: 10px;
+}

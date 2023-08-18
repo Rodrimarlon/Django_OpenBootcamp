@@ -1,0 +1,27 @@
+{% extends 'layouts/base.html' %} 
+
+{% load static %}
+
+{% block title %}Fotografo Profecional{%endblock title %} 
+
+
+{% block content %}
+<main class='main_home'>
+  
+  <img src="{% static 'img/fotografo.jpeg' %}" alt="fotografo">
+  
+  <h1>Pedro Navaja - Fotografo Profecional</h1>
+  
+  <div class='precentation'>
+    <p>
+      Soy Pedro Navaja y soy un fotografo profecional que toma fotos de gatitos.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veniam
+      quibusdam numquam consectetur placeat beatae ab quaerat eius, ea quidem
+      accusantium enim soluta eos laboriosam magnam, pariatur voluptatibus
+      aspernatur laborum.
+    </p>
+  </div>
+</main>
+{% endblock content %}
