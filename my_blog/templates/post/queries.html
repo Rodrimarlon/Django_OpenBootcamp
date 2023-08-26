@@ -12,12 +12,19 @@
       <li>{{ author.id }}._ {{ author.name }} ({{author.email}})</li>
       {% endfor %}
     </ul>
+    <h3>Elementos Ordenados por Email</h3>
+    <ul>
+      {% for order in orders %}
+        <li>{{order.email}}</li>
+      {% endfor %}
+    </ul>
+
     <h3>Total de Autores:{{ authors|length }} </h3>
     
-    <h3>Autor cuyo email es wlove@example.net</h3>
+    <h3>Autores que es su nombre contienen la palabra 'the'</h3>
     <ul>
         {% for filter in filtered %}
-        <li>{{ filter.name }} | {{ filter.email }}</li>
+        <li>{{ filter.name }}</li>
         {% endfor %}
     </ul>
     <h3>Obteniendo un unico elemento (filtrado por ID)</h3>
