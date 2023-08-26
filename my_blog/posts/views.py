@@ -43,9 +43,9 @@ def queries(request):
 
 
 def update(request):
-    author = Author.objects.get(id=1)
-    author.name = 'Marlon'
-    author.email = 'marlon@example.com'
+    author = Author.objects.get(id=2)
+    author.name = 'Melani'
+    author.email = 'melani@example.com'
     author.save()
 
     return HttpResponse('Datos Actualizados')
