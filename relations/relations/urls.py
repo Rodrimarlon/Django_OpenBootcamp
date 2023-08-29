@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('one/', include('one_to_one.urls')),
     path('many/', include('many_to_one.urls')),
+    path('many_to_many/', include('many_to_many.urls')),
 ]
