@@ -42,4 +42,6 @@ def create(request):
     pub1 = Publication.objects.get(id=1)
     result1 = pub1.article_set.all()
 
+    # Eliminar una relacion
+    # art1.publications.remove(pub1)
     return HttpResponse(result1) 
