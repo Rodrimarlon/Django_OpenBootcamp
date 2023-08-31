@@ -44,4 +44,5 @@ def create(request):
 
     # Eliminar una relacion
     # art1.publications.remove(pub1)
+    
     return HttpResponse(result1) 
