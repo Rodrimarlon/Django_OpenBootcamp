@@ -8,6 +8,11 @@
   <body>
     <h1>Formularios Django</h1>
     <hr />
-    {{ comment_form }}
+    
+    <form action="{% url "goal" %}" method="POST">
+        {% csrf_token %}
+        {{ comment_form.as_p }}
+        <input type="submit" value="Enviar">
+    </form>
   </body>
 </html>
