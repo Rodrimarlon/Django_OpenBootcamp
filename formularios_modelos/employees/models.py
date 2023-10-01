@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Employees(models.Model):
+class Employee(models.Model):
     name = models.CharField(max_length=50, blank=False, null=False)
     last_name = models.CharField(max_length=50, blank=False, null=False)
     email = models.EmailField(max_length=254, blank=False, null=False)
