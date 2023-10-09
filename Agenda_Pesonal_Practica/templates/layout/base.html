@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor Personal | {% block 'title' %}{% endblock %}</title>
+    {% block 'style' %}{% endblock  %}
+</head>
+<body>
+    {% include "layout/partials/nav.html" %}
+    <main>
+        {% block 'content' %}{% endblock %}
+    </main>
+    {% block 'scripts' %}{% endblock  %}
+</body>
+</html>
