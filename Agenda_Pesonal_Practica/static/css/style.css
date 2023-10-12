@@ -66,10 +66,34 @@ nav ul li a:hover {
 
 main {
     display: flex;
+    flex-direction: column;
     width: 100vw;
     margin: 50px;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.search {
+    margin-bottom: 20px;
+    width: 40%;
+}
+
+.search-var {
+    padding: 5px;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.search-btn {
+    padding: 5px 10px;
+    color: white;
+    background-color: var(--color-primary);
+    border-radius: 5px;
+}
+
+.search-btn:hover {
+    color: var(--color-primary);
+    background-color: antiquewhite;
 }
 
 .list {

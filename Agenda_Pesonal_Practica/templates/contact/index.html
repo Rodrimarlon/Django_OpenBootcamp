@@ -3,11 +3,15 @@
 {% block 'title' %} Contactos {% endblock %}
 
 {% block 'content' %}
-<form>
-    <input type='text' name='search' placeholder='Buscar contacto...'>
-    <input type='submit' value='Buscar'>
+<form class="search" action="{% url "contact" %}" method="GET">
+    <input type='text' name='search' class="search-var" placeholder='Buscar contacto...'>
+    <input type='submit' value='Buscar' class="search-btn">
 </form>
 
+<span>
+    <a href="{% url "contact" %}">Ver Todos</a>
+    <a href="#">Añadir</a>
+</span>
 
 <ul class='list'>
     {% for contact in contacts %}
