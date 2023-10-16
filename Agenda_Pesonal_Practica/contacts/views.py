@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Contact
+from .forms import ContactForm
 
 # Create your views here.
 def index(request):
@@ -20,3 +21,13 @@ def view(request, id):
     }
 
     return render(request, 'contact/detail.html', context)
+
+
+def edit(request, id):
+    if (request.method == 'GET'):
+        contact = Contact.objects.get(id=id)
+        form = ContactForm(instance=contact)
+        context = {
+            'form': form
+        }
+        return render(request, 'contact/create.html', context)

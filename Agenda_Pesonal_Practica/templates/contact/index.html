@@ -18,7 +18,7 @@
         <li>{{ contact }} 
             <span>
                 <a class='btn btn-detail' href="{% url "contact_view" id=contact.id %}">Ver</a>
-                <a class='btn btn-edit' href='#'>Editar</a>
+                <a class='btn btn-edit' href="{% url "contact_edit" id=contact.id %}">Editar</a>
                 <a class='btn btn-delete' href='#'>Borrar</a>
             </span>
         </li>
