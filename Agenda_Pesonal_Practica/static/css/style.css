@@ -141,3 +141,16 @@ main {
     color: black;
 }
 /* End layout settings */ 
+
+.btn-back {
+    margin-bottom: 5px;
+}
+
+.alert-success {
+    width: 100%;
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(14, 191, 14);
+    color:white;
+    text-align: center;
+}
