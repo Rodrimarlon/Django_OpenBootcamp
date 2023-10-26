@@ -10,7 +10,7 @@
 
 <span>
     <a href="{% url "contact" %}" class="btn search-btn">Ver Todos</a>
-    <a href="" class="btn search-btn">Añadir</a>
+    <a href="{% url "contact_create" %}" class="btn search-btn">Añadir</a>
 </span>
 
 <ul class='list'>
@@ -19,7 +19,7 @@
             <span>
                 <a class='btn btn-detail' href="{% url "contact_view" id=contact.id %}">Ver</a>
                 <a class='btn btn-edit' href="{% url "contact_edit" id=contact.id %}">Editar</a>
-                <a class='btn btn-delete' href='#'>Borrar</a>
+                <a class='btn btn-delete' href="{% url "contact_delete" id=contact.id %}">Borrar</a>
             </span>
         </li>
     {% endfor %}
